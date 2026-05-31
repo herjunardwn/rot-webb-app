@@ -1,14 +1,17 @@
+import { Helmet } from "react-helmet-async";
 import BannerTop from "@/components/fragments/BannerTop";
 import LatestRelease from "@/components/fragments/LatestRelease";
 import MusicVideo from "@/components/fragments/MusicVideo";
 import AnniversaryCta from "@/components/fragments/AnniversaryCta";
 import PopularTracks from "@/components/fragments/PopularTracks";
-import AboutCta from "@/components/fragments/AboutCta";
 import ShowEvents from "@/components/fragments/ShowEvents";
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Remember of Today | Official Website</title>
+      </Helmet>
       {/* banner */}
       <BannerTop />
       {/* highlight new video release */}

@@ -1,3 +1,10 @@
+import { Helmet } from "react-helmet-async";
 export default function Video() {
-  return <div>Video</div>;
+  return (
+    <>
+      <Helmet>
+        <title>Video | Remember of Today</title>
+      </Helmet>
+    </>
+  );
 }

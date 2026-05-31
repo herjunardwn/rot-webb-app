@@ -1,3 +1,10 @@
+import { Helmet } from "react-helmet-async";
 export default function Contact() {
-  return <div className='text-white text-2xl font-heading'>Contact</div>;
+  return (
+    <>
+      <Helmet>
+        <title>Contact | Remember of Today</title>
+      </Helmet>
+    </>
+  );
 }

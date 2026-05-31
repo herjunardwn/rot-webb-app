@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import BannerPage from "@/components/elements/BannerPage";
 import banner from "@/assets/banner/discography-banner.png";
@@ -14,6 +15,9 @@ export default function Gallery() {
   //       );
   return (
     <>
+      <Helmet>
+        <title>Gallery | Remember of Today</title>
+      </Helmet>
       <BannerPage banner={banner} />
       {/* <FilterTabs
         tabs={tabs}
