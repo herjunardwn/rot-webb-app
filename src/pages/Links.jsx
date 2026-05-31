@@ -81,9 +81,9 @@ export default function Links() {
       >
         <Plasma
           color='#ff4f8b'
-          speed={1}
+          speed={0.5}
           direction='forward'
-          scale={0.8}
+          scale={0.6}
           opacity={1}
           mouseInteractive={false}
         />
@@ -134,7 +134,7 @@ export default function Links() {
           ))}
         </div>
 
-        <p className='text-white/50 font-body text-xs mt-12'>
+        <p className='text-white/50 font-heading text-xs mt-12'>
           &copy; 2026 REMEMBER OF TODAY
         </p>
       </div>
