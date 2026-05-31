@@ -71,8 +71,14 @@ const links = [
 
 export default function Links() {
   return (
-    <div className='relative min-h-screen'>
-      <div style={{ position: "fixed", inset: 0, zIndex: 0 }}>
+    <div className='fixed inset-0 overflow-y-auto'>
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+        }}
+      >
         <Plasma
           color='#ff4f8b'
           speed={1}
