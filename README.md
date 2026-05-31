@@ -21,17 +21,18 @@ Official website band **Remember of Today (ROT)**, pop punk band dari Cengkareng
 
 ## 🛠️ Tech Stack
 
+|               |                           |
 | ------------- | ------------------------- |
-| Framework | React 19 + Vite 8 |
-| Styling | Tailwind CSS v4 |
-| Routing | React Router v6 |
-| Animation | GSAP, Motion, Reactbits |
-| UI Components | shadcn/ui, Radix UI |
-| Carousel | Swiper |
-| Icons | Lucide React, React Icons |
-| Font | Geist Variable |
-| SEO | React Helmet Async |
-| Deploy | Vercel |
+| Framework     | React 19 + Vite 8         |
+| Styling       | Tailwind CSS v4           |
+| Routing       | React Router v6           |
+| Animation     | GSAP, Motion, Reactbits   |
+| UI Components | shadcn/ui, Radix UI       |
+| Carousel      | Swiper                    |
+| Icons         | Lucide React, React Icons |
+| Font          | Geist Variable            |
+| SEO           | React Helmet Async        |
+| Deploy        | Vercel                    |
 
 ---
 
