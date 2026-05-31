@@ -1,0 +1,30 @@
+import BannerTop from "@/components/fragments/BannerTop";
+import LatestRelease from "@/components/fragments/LatestRelease";
+import MusicVideo from "@/components/fragments/MusicVideo";
+import AnniversaryCta from "@/components/fragments/AnniversaryCta";
+import PopularTracks from "@/components/fragments/PopularTracks";
+import AboutCta from "@/components/fragments/AboutCta";
+import ShowEvents from "@/components/fragments/ShowEvents";
+
+export default function Home() {
+  return (
+    <>
+      {/* banner */}
+      <BannerTop />
+      {/* highlight new video release */}
+      <MusicVideo
+        title='Selayaknya | Official Music Video'
+        videoTitle='Selayaknya Official Music Video'
+        src='https://www.youtube.com/embed/AZo9FHtNFRU?si=iPIjvZKYmOFuZubg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen'
+      />
+      {/* latest release */}
+      <LatestRelease />
+      {/* CTA anniversary */}
+      <AnniversaryCta />
+      {/* popular songs */}
+      <PopularTracks />
+      {/* show events */}
+      <ShowEvents />
+    </>
+  );
+}

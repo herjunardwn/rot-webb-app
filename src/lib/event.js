@@ -1,0 +1,51 @@
+import Event1 from "@/assets/event/event-1.png";
+import Event2 from "@/assets/event/event-2.png";
+import Event3 from "@/assets/event/event-3.png";
+
+export const Event = [
+  {
+    id: 1,
+    title: "Noise teenage",
+    location: "kalideres, jakarta barat",
+    day: "Saturday",
+    date: 25,
+    month: "April",
+    monthNumber: "04",
+    year: 2026,
+    venue: "Panas Dingin space",
+    time: "21:00 WIB",
+    image: Event3,
+    badge: "Upcoming",
+    status: "open",
+  },
+  {
+    id: 2,
+    title: "Lazy Time perception vol.2",
+    location: "Pancoran mas, Depok",
+    day: "Sunday",
+    date: 15,
+    month: "February",
+    monthNumber: "02",
+    year: 2026,
+    venue: "Interaksi Space Depok",
+    time: "20:00 WIB",
+    image: Event2,
+    badge: "Past Event",
+    status: "closed",
+  },
+  {
+    id: 3,
+    title: "SECRET Frequency",
+    location: "Tangerang",
+    day: "Friday",
+    date: 13,
+    month: "February",
+    monthNumber: "02",
+    year: 2026,
+    venue: "Se.tujuan Coffee & Eatery",
+    time: "20:00 WIB",
+    image: Event1,
+    badge: "Past Event",
+    status: "closed",
+  },
+];
