@@ -1,16 +1,75 @@
-# React + Vite
+# Remember of Today — Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website band **Remember of Today (ROT)**, pop punk band dari Cengkareng yang berdiri sejak 2011.
 
-Currently, two official plugins are available:
+## 🔗 Live
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[rot-webb-app.vercel.app](https://rememberoftoday.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📄 Halaman
 
-## Expanding the ESLint configuration
+- **Home** — Landing page utama
+- **Biography** — Sejarah dan profil band
+- **Discography** — Daftar album, EP & single
+- **Video** — Music video & konten visual
+- **Contact** — Kontak & booking
+- **Links** — Semua link platform dalam satu halaman
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+|               |                           |
+| ------------- | ------------------------- |
+| Framework     | React 19 + Vite 8         |
+| Styling       | Tailwind CSS v4           |
+| Routing       | React Router v6           |
+| Animation     | GSAP, Motion, Reactbits   |
+| UI Components | shadcn/ui, Radix UI       |
+| Carousel      | Swiper                    |
+| Icons         | Lucide React, React Icons |
+| Font          | Geist Variable            |
+| SEO           | React Helmet Async        |
+| Deploy        | Vercel                    |
+
+---
+
+## 🚀 Menjalankan Secara Lokal
+
+```bash
+# Clone repo
+git clone https://github.com/herjunardwn/rot-webb-app.git
+cd rot-webb-app
+
+# Install dependencies
+npm install
+
+# Jalankan dev server
+npm run dev
+```
+
+---
+
+## 📁 Struktur Folder
+
+```
+src/
+├── assets/         # Gambar & media
+├── components/     # Komponen reusable
+│   ├── elements/   # Komponen kecil (Button, Card, dll)
+│   └── fragments/  # Komponen gabungan (Footer, Navbar, dll)
+├── lib/            # Data statis (discography, events, dll)
+└── pages/          # Halaman utama
+```
+
+---
+
+## 📝 Catatan
+
+- Routing menggunakan client-side, konfigurasi rewrite ada di `vercel.json`
+
+---
+
+© 2026 Remember of Today. All rights reserved.
