@@ -34,7 +34,7 @@ export default function Video() {
           Visit YouTube Channel
         </a>
       </section> */}
-      <section className='relative mx-4 lg:mx-auto lg:container py-12 px-6 text-center border border-neonPink/20 bg-mainBg rounded-xl my-20 overflow-hidden'>
+      <section className='relative mx-4 lg:mx-auto lg:container py-12 px-6 text-center border border-neonPink/20 bg-mainBg rounded-xl mb-10 overflow-hidden'>
         {/* Glow Background */}
         <div className='absolute -top-24 -right-24 w-64 h-64 bg-neonPink/10 blur-3xl rounded-full'></div>
         <div className='absolute -bottom-24 -left-24 w-64 h-64 bg-neonPink/10 blur-3xl rounded-full'></div>
