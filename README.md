@@ -1,6 +1,6 @@
 # Remember of Today - Official Website
 
-Official website band **Remember of Today (ROT)**, pop punk band dari Cengkareng yang berdiri sejak 2011.
+Official website band **Remember of Today (ROT)**, pop punk band yang sudah berdiri sejak 2011.
 
 ## 🔗 Live
 
