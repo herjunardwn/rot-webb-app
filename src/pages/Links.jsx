@@ -108,7 +108,7 @@ export default function Links() {
           </p>
 
           {/* Links */}
-          <div className='w-full max-w-sm flex flex-col gap-3'>
+          <div className='w-full max-w-md flex flex-col gap-3'>
             {links.map((link) => (
               <a
                 key={link.label}
@@ -123,7 +123,7 @@ export default function Links() {
               >
                 <span className='text-white text-xl'>{link.icon}</span>
                 <div className='flex flex-col flex-1'>
-                  <span className='font-heading text-white text-sm font-medium'>
+                  <span className='font-heading text-white text-md font-medium'>
                     {link.label}
                   </span>
                   <span className='text-white/50 text-xs font-body'>
