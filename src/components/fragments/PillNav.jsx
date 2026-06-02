@@ -309,7 +309,7 @@ const PillNav = ({
     ["--nav-h"]: "42px",
     ["--logo"]: "36px",
     ["--pill-pad-x"]: "18px",
-    ["--pill-gap"]: "3px",
+    ["--pill-gap"]: "4px",
   };
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -395,7 +395,7 @@ const PillNav = ({
         >
           <ul
             role='menubar'
-            className='list-none flex items-stretch m-0 p-[3px] h-full'
+            className='list-none flex items-stretch m-0 p-[4px] h-full'
             style={{ gap: "var(--pill-gap)" }}
           >
             {items.map((item, i) => {

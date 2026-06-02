@@ -1,6 +1,6 @@
 import SectionTitle from "@/components/elements/SectionTitle";
 import { Event } from "@/lib/event";
-import { MapPin, Clock3 } from "lucide-react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ShowEvents() {
   return (
@@ -19,7 +19,7 @@ export default function ShowEvents() {
       ) : (
         <div className='flex flex-col justify-center gap-6'>
           {Event.map((event) => (
-            <article
+            <div
               key={event.id}
               className='group relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 transition-all duration-300 hover:border-neonPink/40 hover:shadow-2xl '
             >
@@ -56,7 +56,7 @@ export default function ShowEvents() {
                   />
 
                   {/* Overlay */}
-                  <div className='absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent'></div>
+                  <div className='absolute inset-0 bg-gradient-to-t from-mainBlack via-mainBlack/40 to-transparent'></div>
 
                   {/* Badge */}
                   <div className='absolute left-4 top-4'>
@@ -69,25 +69,27 @@ export default function ShowEvents() {
                 {/* Content */}
                 <div className='flex flex-col justify-center space-y-5 p-6 lg:p-10'>
                   <div>
-                    {/* <MapPin size={16} className='text-neonPink' /> */}
-                    <p className='mb-2 text-xs uppercase tracking-[0.2em] text-white/40 font-body'>
+                    <p className='mb-2 text-xs uppercase tracking-[0.1em] text-white/40 font-body'>
                       {event.location}
                     </p>
 
-                    <h3 className='font-heading text-2xl text-neonPink lg:text-4xl'>
+                    <h3 className='font-heading text-3xl text-neonPink lg:text-4xl'>
                       {event.title}
                     </h3>
                   </div>
 
                   <div className='flex flex-wrap items-center gap-4 text-sm text-white/50 font-body'>
-                    <span>{event.venue}</span>
+                    <span className='flex items-center gap-1'>
+                      <FaMapMarkerAlt size={12} />
+                      {event.venue}
+                    </span>
                     <span className='h-1 w-1 rounded-full bg-neonPink/50'></span>
                     <span>{event.time}</span>
                   </div>
                 </div>
 
                 {/* CTA */}
-                {event.status === "open" && (
+                {event.status === true && (
                   <div className='flex items-end justify-start p-6 lg:items-center lg:justify-center'>
                     <a
                       href='#'
@@ -98,7 +100,7 @@ export default function ShowEvents() {
                   </div>
                 )}
               </div>
-            </article>
+            </div>
           ))}
         </div>
       )}

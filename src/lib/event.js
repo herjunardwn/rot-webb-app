@@ -15,8 +15,8 @@ export const Event = [
     venue: "Panas Dingin space",
     time: "21:00 WIB",
     image: Event3,
-    badge: "Upcoming",
-    status: "open",
+    badge: "Upcoming Show",
+    status: true,
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const Event = [
     time: "20:00 WIB",
     image: Event2,
     badge: "Past Event",
-    status: "closed",
+    status: false,
   },
   {
     id: 3,
@@ -46,6 +46,6 @@ export const Event = [
     time: "20:00 WIB",
     image: Event1,
     badge: "Past Event",
-    status: "closed",
+    status: false,
   },
 ];

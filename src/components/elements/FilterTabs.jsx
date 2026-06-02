@@ -1,6 +1,6 @@
 export default function FilterTabs({ tabs, activeTab, setActiveTab }) {
   return (
-    <div className='flex gap-3 mb-14 overflow-x-auto whitespace-nowrap scrollbar-none'>
+    <div className='flex lg:justify-center gap-3 mb-14 overflow-x-auto whitespace-nowrap scrollbar-none'>
       {tabs.map((tab) => (
         <button
           key={tab}

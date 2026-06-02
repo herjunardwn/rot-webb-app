@@ -35,8 +35,8 @@ export default function App() {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path='/' element={<Home />} />
-            <Route path='/discography' element={<Discography />} />
             <Route path='/biography' element={<Biography />} />
+            <Route path='/discography' element={<Discography />} />
             <Route path='/video' element={<Video />} />
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/contact' element={<Contact />} />

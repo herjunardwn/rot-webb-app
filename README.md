@@ -1,6 +1,6 @@
 # Remember of Today - Official Website
 
-Official website band **Remember of Today (ROT)**, pop punk band yang sudah berdiri sejak 2011.
+Official website band **Remember of Today (ROT)**.
 
 ## 🔗 Live
 
@@ -33,22 +33,6 @@ Official website band **Remember of Today (ROT)**, pop punk band yang sudah berd
 | Font          | Geist Variable            |
 | SEO           | React Helmet Async        |
 | Deploy        | Vercel                    |
-
----
-
-## 🚀 Menjalankan Secara Lokal
-
-```bash
-# Clone repo
-git clone https://github.com/herjunardwn/rot-webb-app.git
-cd rot-webb-app
-
-# Install dependencies
-npm install
-
-# Jalankan dev server
-npm run dev
-```
 
 ---
 

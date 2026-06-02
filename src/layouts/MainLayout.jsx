@@ -13,10 +13,10 @@ export default function MainLayout() {
             logoAlt='ROT Logo'
             items={[
               { label: "Home", href: "/" },
-              { label: "Discography", href: "/discography" },
               { label: "Biography", href: "/biography" },
-              { label: "Video", href: "/video" },
+              { label: "Discography", href: "/discography" },
               { label: "Gallery", href: "/gallery" },
+              { label: "Video", href: "/video" },
             ]}
             activeHref='/'
             className='custom-nav'

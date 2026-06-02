@@ -1,9 +1,10 @@
 import anniversaryVideo from "@/assets/video/rot_anniversary.mp4";
-import SplitText from "@/components/SplitText";
+import ShinyText from "@/components/ShinyText";
 import BlurText from "@/components/BlurText";
 import { useEffect, useRef } from "react";
 import bgImage from "@/assets/bg-about.webp";
 import Poster from "@/assets/anniversaryPoster.webp";
+import Button from "../elements/Button";
 
 export default function AnniversaryCta() {
   const bgRef = useRef(null);
@@ -44,30 +45,30 @@ export default function AnniversaryCta() {
                 Indie Sejak Dini
               </p>
               <h2 className='text-4xl lg:text-7xl font-heading font-bold leading-none'>
-                <SplitText
+                <ShinyText
                   text='15th Anniversary Celebration'
-                  className='text-neonPink text-5xl lg:text-7xl'
-                  delay={50}
-                  duration={1.25}
-                  ease='power3.out'
-                  splitType='chars'
-                  from={{ opacity: 0, y: 40 }}
-                  to={{ opacity: 1, y: 0 }}
-                  threshold={0.1}
-                  rootMargin='-100px'
-                  textAlign='start'
-                  showCallback
+                  speed={3}
+                  delay={0}
+                  color='#ff4f8b'
+                  shineColor='#ffffff'
+                  spread={-45}
+                  direction='left'
+                  pauseOnHover={false}
+                  disabled={false}
                 />
               </h2>
-              <div className='text-base font-heading text-gray-300 leading-relaxed max-w-md'>
+              <p className='text-base font-heading text-gray-300 leading-relaxed max-w-md'>
                 <BlurText
                   text="A celebration of every song, every scream, every crowd singalong, and every moment we've shared together through the years."
-                  delay={200}
+                  delay={100}
                   animateBy='words'
                   direction='top'
-                  className='text-sm lg:text-lg mb-8 text-start font-body'
+                  className='text-md lg:text-lg mb-8 text-start font-body'
                 />
-              </div>
+              </p>
+              <Button url='https://www.instagram.com/reel/DUAGNVmkQ6X/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='>
+                See Post On Instagram
+              </Button>
             </div>
             {/* Content Right */}
             <div className='rounded-3xl shadow-2xl shadow-punkPink/20 lg:col-span-3 overflow-hidden '>
