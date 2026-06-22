@@ -27,7 +27,7 @@ export default function Biography() {
             />
           </div>
           <div className=''>
-            <span className='text-md text-white font-medium mb-2 block font-body animate-pulse'>
+            <span className='text-md uppercase tracking-tight text-white font-medium mb-2 block font-body animate-pulse'>
               Remember of Today
             </span>
             <h1 className='text-5xl lg:text-7xl font-heading font-bold leading-none'>
@@ -52,11 +52,11 @@ export default function Biography() {
                 delay={100}
                 animateBy='words'
                 direction='top'
-                className='text-sm lg:text-lg mb-8 text-start font-body'
+                className='text-md lg:text-lg mb-8 text-start font-body'
               />
             </p>
 
-            <span className='text-gray-200 inline-block mb-4 font-heading text-xl lg:text-2xl'>
+            <span className='text-gray-200 inline-block mb-6 font-heading text-xl lg:text-2xl'>
               <ShinyText
                 text='"Songs For The Moments You Never Forget"'
                 speed={3}

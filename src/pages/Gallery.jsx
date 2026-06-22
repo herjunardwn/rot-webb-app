@@ -1,29 +1,24 @@
 import { Helmet } from "react-helmet-async";
-import { useState } from "react";
+import banner from "@/assets/banner/gallery-banner.png";
 import BannerPage from "@/components/elements/BannerPage";
-import banner from "@/assets/banner/discography-banner.png";
-import FilterTabs from "@/components/elements/FilterTabs";
+import GalleryList from "@/components/fragments/GalleryList";
+import CtaSection from "@/components/fragments/CtaSection";
 
 export default function Gallery() {
-  // const [activeTab, setActiveTab] = useState("ALL");
-  // const tabs = ["ALL", "LIVE", "BACKSTAGE", "MERCH"];
-  // const filterDiscography =
-  //   activeTab === "ALL"
-  //     ? discography
-  //     : discography.filter(
-  //         (item) => item.type.toLowerCase() === activeTab.toLocaleLowerCase(),
-  //       );
   return (
     <>
       <Helmet>
         <title>Gallery | Remember of Today</title>
       </Helmet>
       <BannerPage banner={banner} />
-      {/* <FilterTabs
-        tabs={tabs}
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-      /> */}
+      <GalleryList />
+      <CtaSection
+        subHeading='Stay Connected'
+        heading='WANT MORE MEMORIES?'
+        description='More shows. More stories. More memories. Follow us for the latest moments behind the music.'
+        url='https://www.instagram.com/rememberoftoday_/'
+        buttonText='Follow on Instagram'
+      />
     </>
   );
 }

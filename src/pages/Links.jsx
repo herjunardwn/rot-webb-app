@@ -103,9 +103,12 @@ export default function Links() {
           <h1 className='font-heading text-white text-2xl font-bold tracking-wide uppercase mb-1 mt-3 '>
             Remember <span className='text-neonPink'>Of</span> Today
           </h1>
-          <p className='font-body text-white/50 text-xs mb-10 text-center'>
-            Poppunk band from CGK | Est. 2011
+          <p className='font-body text-white/50 text-xs mb-10 text-center uppercase'>
+            Poppunk band from CGK | EST. 2011
           </p>
+          {/* <span className='text-white/50 text-sm mb-6 font-body italic'>
+            "Songs For The Moments You Never Forget"
+          </span> */}
 
           {/* Links */}
           <div className='w-full max-w-md flex flex-col gap-3'>

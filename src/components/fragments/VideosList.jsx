@@ -26,7 +26,7 @@ export default function VideoList() {
       {/* grid card */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {[...filterVideos].map((item) => (
-          <div key={item.id} className='mb-10'>
+          <div key={item.id} className='mb-5'>
             <p className='text-pink-500 text-center font-body text-xs uppercase tracking-[0.2em]'>
               {item.category}
             </p>

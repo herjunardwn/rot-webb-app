@@ -44,7 +44,7 @@ export default function AnniversaryCta() {
                 <span className='font-extrabold text-sm text-neonPink'>x</span>{" "}
                 Indie Sejak Dini
               </p>
-              <h2 className='text-4xl lg:text-7xl font-heading font-bold leading-none'>
+              <h2 className='text-5xl lg:text-7xl font-heading font-bold leading-none -mt-3'>
                 <ShinyText
                   text='15th Anniversary Celebration'
                   speed={3}
@@ -71,7 +71,7 @@ export default function AnniversaryCta() {
               </Button>
             </div>
             {/* Content Right */}
-            <div className='rounded-3xl shadow-2xl shadow-punkPink/20 lg:col-span-3 overflow-hidden '>
+            <div className='rounded-3xl mt-3 lg:mt-0 shadow-2xl shadow-punkPink/20 lg:col-span-3 overflow-hidden '>
               <video
                 preload='auto'
                 poster={Poster}

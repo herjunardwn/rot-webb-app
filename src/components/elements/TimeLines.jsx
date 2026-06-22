@@ -29,7 +29,7 @@ export default function TimeLines() {
 
   return (
     <section className='container mx-auto px-4 py-10'>
-      <h2 className='text-2xl lg:text-3xl font-heading text-white text-center'>
+      <h2 className='text-2xl lg:text-4xl font-heading text-white text-center'>
         Timeline of <span className='text-neonPink'>Remember of Today</span>
       </h2>
 

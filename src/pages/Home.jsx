@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Remember of Today | Official Website</title>
+        <title>Remember of Today</title>
       </Helmet>
       {/* banner */}
       <BannerTop />
