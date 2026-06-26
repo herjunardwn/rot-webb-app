@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Bagaimana cara melakukan booking atau kerja sama?",
-    a: "Kamu bisa mengisi form yang tersedia di halaman ini, atau menghubungi kami langsung via WhatsApp atau Instagram DM @rememberoftoday_.",
+    a: "Kamu bisa mengisi form yang tersedia di halaman ini, atau menghubungi kami via WhatsApp atau Instagram DM @rememberoftoday_.",
   },
   {
     q: "Apakah ada merchandise yang bisa dibeli?",
