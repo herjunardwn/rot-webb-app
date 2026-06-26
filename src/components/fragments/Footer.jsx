@@ -53,9 +53,9 @@ export default function Footer() {
     >
       <div className='absolute inset-0 bg-[linear-gradient(to_right,_rgba(0,0,0,0.7)_0%,_transparent_50%,_transparent_50%,_rgba(0,0,0,0.7)_100%)]' />
       <div className='relative mx-auto z-10 max-w-5xl px-4 py-4 sm:px-6 lg:px-8'>
-        <img src={logo} alt='logo_rot' className='w-36 lg:w-60 mx-auto' />
+        <img src={logo} alt='logo_rot' className='w-36 lg:w-48 mx-auto' />
 
-        <ul className='mb-8 lg:mb-10 flex flex-wrap justify-center gap-4 lg:gap-6 font-body uppercase text-sm lg:text-md font-semibold'>
+        <ul className='mb-8 lg:mb-10 flex flex-wrap justify-center gap-4 lg:gap-6 font-body uppercase text-xs lg:text-md font-semibold'>
           <li>
             <Link
               className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
@@ -69,7 +69,7 @@ export default function Footer() {
               className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
               to='/terms-and-conditions'
             >
-              Term & Conditions
+              Terms & Conditions
             </Link>
           </li>
           <li>

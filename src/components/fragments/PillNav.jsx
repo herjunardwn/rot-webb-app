@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaSpotify, FaInstagram } from "react-icons/fa";
 import { SiYoutubemusic } from "react-icons/si";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
 import ButtonLink from "../elements/ButtonLinks";
 
@@ -399,7 +399,11 @@ const PillNav = ({
             style={{ gap: "var(--pill-gap)" }}
           >
             {items.map((item, i) => {
-              const isActive = activeHref === item.href;
+              const location = useLocation();
+              const isActive =
+                item.href === "/"
+                  ? location.pathname === "/"
+                  : location.pathname.startsWith(item.href);
 
               const pillStyle = {
                 background: "var(--pill-bg, #fff)",

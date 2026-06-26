@@ -14,7 +14,7 @@ export default function Gallery() {
       <GalleryList />
       <CtaSection
         subHeading='Stay Connected'
-        heading='WANT MORE MEMORIES?'
+        heading='MORE MEMORIES?'
         description='More shows. More stories. More memories. Follow us for the latest moments behind the music.'
         url='https://www.instagram.com/rememberoftoday_/'
         buttonText='Follow on Instagram'

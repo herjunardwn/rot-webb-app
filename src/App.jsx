@@ -12,6 +12,8 @@ import Links from "@/pages/Links";
 import ScrollToTop from "@/components/elements/ScrollToTop.jsx";
 import FuzzyText from "@/components/FuzzyText";
 import Loader from "@/components/elements/Loader";
+import TermsConditions from "./pages/termsConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +42,8 @@ export default function App() {
             <Route path='/video' element={<Video />} />
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/terms-and-conditions' element={<TermsConditions />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           </Route>
 
           <Route element={<LinksLayout />}>
