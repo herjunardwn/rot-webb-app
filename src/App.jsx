@@ -12,7 +12,7 @@ import Links from "@/pages/Links";
 import ScrollToTop from "@/components/elements/ScrollToTop.jsx";
 import FuzzyText from "@/components/FuzzyText";
 import Loader from "@/components/elements/Loader";
-import TermsConditions from "./pages/termsConditions";
+import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
