@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import banner1 from "@/assets/banner/1.png";
+import banner1 from "@/assets/banner/banner1.webp";
 import banner2 from "@/assets/banner/2.png";
 // import "swiper/css/pagination";
 
