@@ -64,20 +64,21 @@ export default function Footer() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link
-              className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
-              to='/terms-and-conditions'
-            >
-              Terms & Conditions
-            </Link>
-          </li>
+
           <li>
             <Link
               className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
               to='/privacy-policy'
             >
               Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <Link
+              className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
+              to='/terms-and-conditions'
+            >
+              Terms & Conditions
             </Link>
           </li>
         </ul>

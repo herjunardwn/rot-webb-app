@@ -1,16 +1,18 @@
 import { Helmet } from "react-helmet-async";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import { FaSpotify, FaInstagram, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import bannerContact from "@/assets/gallery/live/live-4.webp";
+import bannerContact from "@/assets/gallery/live/live-2.jpg";
 
 const contactInfo = [
   {
     icon: <FaPhone />,
     label: "Phone",
-    value: "0812 8972 2114",
-    href: "tel:081289722114",
+    value: "0812 3456 7890",
+    href: "tel:0812xxxxxxxx",
   },
   {
     icon: <MdEmail size={20} />,
@@ -142,16 +144,49 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle submit logic
-    console.log(form);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        },
+        PUBLIC_KEY,
+      );
+
+      setSubmitted(true);
+      toast.success("Message sent successfully!");
+
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -226,6 +261,7 @@ export default function Contact() {
                 name='name'
                 value={form.name}
                 onChange={handleChange}
+                required
                 placeholder='Your name'
                 className='bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-body placeholder:text-gray-500 focus:outline-none focus:border-neonPink transition-colors'
               />
@@ -239,6 +275,7 @@ export default function Contact() {
                 name='email'
                 value={form.email}
                 onChange={handleChange}
+                required
                 placeholder='your@email.com'
                 className='bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-body placeholder:text-gray-500 focus:outline-none focus:border-neonPink transition-colors'
               />
@@ -253,18 +290,19 @@ export default function Contact() {
               name='subject'
               value={form.subject}
               onChange={handleChange}
+              required
               className='bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-body focus:outline-none focus:border-neonPink transition-colors'
             >
-              <option value='' className='bg-[#120F17]'>
-                Select inquiry type
+              <option value='' className='bg-[#120F17]' disabled>
+                -- Select inquiry type --
               </option>
-              <option value='booking' className='bg-[#120F17]'>
+              <option value='Booking & Shows' className='bg-[#120F17]'>
                 Booking & Shows
               </option>
-              <option value='collab' className='bg-[#120F17]'>
+              <option value='Collaboration' className='bg-[#120F17]'>
                 Collaboration
               </option>
-              <option value='media' className='bg-[#120F17]'>
+              <option value='Media & Interview' className='bg-[#120F17]'>
                 Media & Interview
               </option>
               <option value='other' className='bg-[#120F17]'>
@@ -281,6 +319,7 @@ export default function Contact() {
               name='message'
               value={form.message}
               onChange={handleChange}
+              required
               placeholder='Tell us more...'
               rows={5}
               className='bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-body placeholder:text-gray-500 focus:outline-none focus:border-neonPink transition-colors resize-none'
@@ -301,9 +340,14 @@ export default function Contact() {
 
           <button
             type='submit'
-            className='w-full py-3 bg-neonPink text-white font-heading font-bold uppercase tracking-widest rounded-full hover:bg-punkPink transition-colors'
+            disabled={loading}
+            className='w-full py-3 bg-neonPink text-white font-heading font-bold uppercase tracking-widest rounded-full hover:bg-punkPink transition-colors disabled:opacity-60'
           >
-            {submitted ? "Message Sent ✓" : "Send Message"}
+            {loading
+              ? "Sending..."
+              : submitted
+                ? "Message Sent ✓"
+                : "Send Message"}
           </button>
         </form>
       </div>
