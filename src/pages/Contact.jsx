@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import bannerContact from "@/assets/gallery/live/live-2.jpg";
+import CtaSection from "@/components/fragments/CtaSection";
 
 const contactInfo = [
   {
@@ -199,7 +200,7 @@ export default function Contact() {
         className='relative py-24 px-4 text-center bg-no-repeat bg-cover bg-center'
         style={{ backgroundImage: `url(${bannerContact})` }}
       >
-        <div className='absolute inset-0 bg-black/80' />
+        <div className='absolute inset-0 bg-black/75' />
         <div className='relative z-10'>
           <h1 className='text-7xl lg:text-9xl font-bold font-heading text-neonPink mb-4'>
             Contact
@@ -371,6 +372,13 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <CtaSection
+        subHeading='More Info'
+        heading='Ask Us Directly'
+        description="Can't find the answer? Hit us up on WhatsApp and we'll get back to you."
+        url='https://wa.me/6281289722114'
+        buttonText='Chat on WhatsApp'
+      />
     </>
   );
 }

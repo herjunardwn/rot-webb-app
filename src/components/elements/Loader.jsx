@@ -11,9 +11,9 @@ export default function Loader() {
         />
 
         <div className='flex gap-2'>
-          <span className='size-2 animate-ping rounded-full bg-gray-300'></span>
-          <span className='size-2 animate-ping rounded-full bg-gray-300 [animation-delay:0.3s]'></span>
-          <span className='size-2 animate-ping rounded-full bg-gray-300 [animation-delay:0.6s]'></span>
+          <span className='size-1.5 animate-ping rounded-full bg-gray-300'></span>
+          <span className='size-1.5 animate-ping rounded-full bg-gray-300 [animation-delay:0.3s]'></span>
+          <span className='size-1.5 animate-ping rounded-full bg-gray-300 [animation-delay:0.6s]'></span>
         </div>
       </div>
     </div>
