@@ -46,7 +46,7 @@ export default function Biography() {
                 showCallback
               />
             </h1>
-            <p className='text-gray-300 mb-4 font-body'>
+            <div className='text-gray-300 mb-4 font-body'>
               <BlurText
                 text='Formed in 2011, Remember of Today is an Indonesian pop punk band known for blending emotional storytelling, energetic melodies, and honest lyrics. Built on friendship, passion, and consistency, the band continues to create music that resonates with listeners through themes of love, struggle, hope, and everyday life.'
                 delay={100}
@@ -54,7 +54,7 @@ export default function Biography() {
                 direction='top'
                 className='text-md lg:text-lg mb-8 text-start font-body'
               />
-            </p>
+            </div>
 
             <span className='text-gray-200 inline-block mb-6 font-heading text-xl lg:text-2xl'>
               <ShinyText

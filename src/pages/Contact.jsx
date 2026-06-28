@@ -294,7 +294,7 @@ export default function Contact() {
               className='bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-body focus:outline-none focus:border-neonPink transition-colors'
             >
               <option value='' className='bg-[#120F17]' disabled>
-                -- Select inquiry type --
+                -- Select Inquiry Type --
               </option>
               <option value='Booking & Shows' className='bg-[#120F17]'>
                 Booking & Shows

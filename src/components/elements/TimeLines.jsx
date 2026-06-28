@@ -3,27 +3,32 @@ export default function TimeLines() {
     {
       year: "2011",
       title: "Band Formation",
-      desc: "Remember of Today was officially formed and began writing original songs.",
+      desc: "Too much feeling, not enough words. So we started a band.",
     },
     {
-      year: "2013",
-      title: "First Release",
-      desc: "Released their early material and started introducing their music to a wider audience.",
+      year: "2014",
+      title: "Pergi Hilang Dan Lupakan",
+      desc: "One song. Thousands of people who finally felt understood. Still the most streamed to this day.",
     },
     {
-      year: "2017",
-      title: "Breakthrough Songs",
-      desc: "Several songs gained significant attention and helped grow the band's fanbase.",
+      year: "2016",
+      title: "Keeping It Going",
+      desc: "More singles, more stories. Proof they were never a one-song band.",
     },
     {
-      year: "2020",
-      title: "New Chapter",
-      desc: "Continued releasing new music and reaching listeners through streaming platforms.",
+      year: "2018",
+      title: "Lelah",
+      desc: "Sometimes the most honest thing you can say is I'm tired.",
+    },
+    {
+      year: "2021",
+      title: "Terbang Kembali Album",
+      desc: "A decade in, their first full album. Everything they felt - finally in one place.",
     },
     {
       year: "Today",
       title: "15 Years Journey",
-      desc: "Still creating music, performing live, and celebrating over a decade of memories with fans.",
+      desc: "Still here. Still making music. Because you never stopped listening.",
     },
   ];
 
@@ -42,7 +47,7 @@ export default function TimeLines() {
           {timeline.map((item, index) => (
             <div
               key={index}
-              className='relative w-[260px] flex-shrink-0 text-center'
+              className='relative w-[260px] flex-shrink-0 text-center flex flex-col'
             >
               {/* Dot */}
               <div className='relative z-10 w-5 h-5 rounded-full bg-neonPink mx-auto mt-[38px]'></div>
@@ -53,11 +58,10 @@ export default function TimeLines() {
               </span>
 
               {/* Card */}
-              <div className='mt-6 border border-white/10 rounded-xl bg-mainBg p-6 backdrop-blur-sm'>
+              <div className='mt-6 border border-white/10 rounded-xl bg-mainBg p-6 backdrop-blur-sm flex-1'>
                 <h3 className='font-heading text-xl text-white mb-3 uppercase'>
                   {item.title}
                 </h3>
-
                 <p className='text-white/60 text-sm leading-relaxed'>
                   {item.desc}
                 </p>

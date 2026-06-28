@@ -57,7 +57,7 @@ export default function AnniversaryCta() {
                   disabled={false}
                 />
               </h2>
-              <p className='text-base font-heading text-gray-300 leading-relaxed max-w-md'>
+              <div className='text-base font-heading text-gray-300 leading-relaxed max-w-md'>
                 <BlurText
                   text="A celebration of every song, every scream, every crowd singalong, and every moment we've shared together through the years."
                   delay={100}
@@ -65,7 +65,7 @@ export default function AnniversaryCta() {
                   direction='top'
                   className='text-md lg:text-lg mb-8 text-start font-body'
                 />
-              </p>
+              </div>
               <Button url='https://www.instagram.com/reel/DUAGNVmkQ6X/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='>
                 See Post On Instagram
               </Button>

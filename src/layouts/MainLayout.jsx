@@ -16,7 +16,8 @@ export default function MainLayout() {
               { label: "Biography", href: "/biography" },
               { label: "Discography", href: "/discography" },
               { label: "Gallery", href: "/gallery" },
-              { label: "Video", href: "/video" },
+              // { label: "Video", href: "/video" },
+              { label: "Contact", href: "/contact" },
             ]}
             activeHref='/'
             className='custom-nav'

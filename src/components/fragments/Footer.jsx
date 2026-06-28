@@ -59,9 +59,9 @@ export default function Footer() {
           <li>
             <Link
               className='text-gray-300 transition hover:text-neonPink/85 dark:text-white hover:underline'
-              to='/contact'
+              to='/video'
             >
-              Contact
+              Videos
             </Link>
           </li>
 
