@@ -11,9 +11,9 @@ export default function TermsConditions() {
         <h1 className='text-5xl lg:text-8xl font-bold font-heading text-neonPink mb-4'>
           Terms & Conditions
         </h1>
-        <p className='text-md text-gray-200 font-body tracking-wider'>
+        {/* <p className='text-md text-gray-200 font-body tracking-wider'>
           Last updated: June 2026
-        </p>
+        </p> */}
       </div>
 
       <div className='container mx-auto px-4 pb-24 max-w-3xl'>
