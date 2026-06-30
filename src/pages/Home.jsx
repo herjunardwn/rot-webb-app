@@ -10,28 +10,12 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Remember of Today</title>
+        <title>REMEMBER OF TODAY | OFFICIAL WEBSITE</title>
 
         <meta
           name='description'
           content='Official website of Remember of Today.'
         />
-
-        <meta property='og:title' content='Remember of Today' />
-
-        <meta
-          property='og:description'
-          content='Official website of Remember of Today.'
-        />
-
-        <meta
-          property='og:image'
-          content='https://rememberoftoday.vercel.app/og-image.webp'
-        />
-
-        <meta property='og:url' content='https://rememberoftoday.vercel.app' />
-
-        <meta property='og:type' content='website' />
       </Helmet>
       {/* banner */}
       <BannerTop />
